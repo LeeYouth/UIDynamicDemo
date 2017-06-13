@@ -45,7 +45,7 @@
     
     self.balls = [NSMutableArray array];
     //添加两个球体，使用拥有重力特性和碰撞特性
-    NSUInteger numOfBalls = 10;
+    NSUInteger numOfBalls = 20;
     for (NSUInteger i = 0; i < numOfBalls; i ++) {
         
         UIImageView *ball = [UIImageView new];

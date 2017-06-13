@@ -35,6 +35,7 @@
 		CF999C121EEF97F200797384 /* headIcon-12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF999C0E1EEF97F200797384 /* headIcon-12.jpg */; };
 		CF999C131EEF97F200797384 /* headIcon-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF999C0F1EEF97F200797384 /* headIcon-13.jpg */; };
 		CF999C151EEF98E900797384 /* introduce.gif in Resources */ = {isa = PBXBuildFile; fileRef = CF999C141EEF98E900797384 /* introduce.gif */; };
+		CF999C171EEFA24100797384 /* introduce-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = CF999C161EEFA24100797384 /* introduce-2.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		CF999C0E1EEF97F200797384 /* headIcon-12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "headIcon-12.jpg"; sourceTree = "<group>"; };
 		CF999C0F1EEF97F200797384 /* headIcon-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "headIcon-13.jpg"; sourceTree = "<group>"; };
 		CF999C141EEF98E900797384 /* introduce.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = introduce.gif; sourceTree = "<group>"; };
+		CF999C161EEFA24100797384 /* introduce-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "introduce-2.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		CF999BE91EEF8B3A00797384 /* headIcon */ = {
 			isa = PBXGroup;
 			children = (
+				CF999C161EEFA24100797384 /* introduce-2.gif */,
 				CF999C141EEF98E900797384 /* introduce.gif */,
 				CF999C0C1EEF97F200797384 /* headIcon-10.jpg */,
 				CF999C0D1EEF97F200797384 /* headIcon-11.jpg */,
@@ -226,6 +229,7 @@
 				CF999BFE1EEF8B3A00797384 /* headIcon-8.jpg in Resources */,
 				CF999BFC1EEF8B3A00797384 /* headIcon-6.jpg in Resources */,
 				CF999BF51EEF8B3A00797384 /* head-back.jpg in Resources */,
+				CF999C171EEFA24100797384 /* introduce-2.gif in Resources */,
 				CF999BF81EEF8B3A00797384 /* headIcon-2.jpg in Resources */,
 				CF999BFF1EEF8B3A00797384 /* headIcon-9.jpg in Resources */,
 				CF999C071EEF97D100797384 /* headIcon-15.jpg in Resources */,
