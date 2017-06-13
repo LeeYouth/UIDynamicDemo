@@ -93,6 +93,7 @@
     sender.enabled = NO;
     [self _setupBalls];
 
+    [self useGyroPush];
 }
 
 
@@ -105,24 +106,20 @@
     
     __weak ViewController *weakSelf = self;
     
-    if (self.MotionManager.deviceMotionAvailable == YES && self.MotionManager.accelerometerAvailable == YES)
-    {
-        [self.MotionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMDeviceMotion *_Nullable motion,NSError * _Nullable error) {
-            
-            NSString *yaw = [NSString stringWithFormat:@"%f",motion.attitude.yaw];
-            NSString *pitch = [NSString stringWithFormat:@"%f",motion.attitude.pitch];
-            NSString *roll = [NSString stringWithFormat:@"%f",motion.attitude.roll];
-            
-            double rotation = atan2(motion.attitude.pitch, motion.attitude.roll);
-            
-            //重力角度
-            weakSelf.gravity.angle = rotation;
-            
-            NSLog(@"yaw = %@,pitch = %@, roll = %@,rotation = %fd",yaw,pitch,roll,rotation);
-            
-        }];
-    }
-    
+    [self.MotionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMDeviceMotion *_Nullable motion,NSError * _Nullable error) {
+        
+        NSString *yaw = [NSString stringWithFormat:@"%f",motion.attitude.yaw];
+        NSString *pitch = [NSString stringWithFormat:@"%f",motion.attitude.pitch];
+        NSString *roll = [NSString stringWithFormat:@"%f",motion.attitude.roll];
+        
+        double rotation = atan2(motion.attitude.pitch, motion.attitude.roll);
+        
+        //重力角度
+        weakSelf.gravity.angle = rotation;
+        
+        NSLog(@"yaw = %@,pitch = %@, roll = %@,rotation = %fd",yaw,pitch,roll,rotation);
+        
+    }];
     
 }
 

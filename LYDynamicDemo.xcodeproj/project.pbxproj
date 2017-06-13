@@ -184,6 +184,7 @@
 				TargetAttributes = {
 					CF999BCE1EEF864F00797384 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8E534K4D8Z;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -368,9 +369,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8E534K4D8Z;
 				INFOPLIST_FILE = LYDynamicDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LYoung.DynamicDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LYoung.dynamic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -379,9 +381,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8E534K4D8Z;
 				INFOPLIST_FILE = LYDynamicDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LYoung.DynamicDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LYoung.dynamic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
