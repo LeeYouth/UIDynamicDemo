@@ -35,7 +35,7 @@
     [self.view addSubview:clickBtn];
     clickBtn.frame = CGRectMake((self.view.frame.size.width - 80)/2, 80, 80, 40);
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"head-back.jpg"]];
+    self.view.backgroundColor = [UIColor colorWithRed:24/255.f green:24/255.f blue:24/255.f alpha:1.f];
 
 }
 
@@ -45,7 +45,7 @@
     
     self.balls = [NSMutableArray array];
     //添加两个球体，使用拥有重力特性和碰撞特性
-    NSUInteger numOfBalls = 15;
+    NSUInteger numOfBalls = 10;
     for (NSUInteger i = 0; i < numOfBalls; i ++) {
         
         UIImageView *ball = [UIImageView new];
@@ -54,7 +54,7 @@
         ball.image = [UIImage imageNamed:[NSString stringWithFormat:@"headIcon-%ld.jpg",i]];
         
         //球的随机大小:40~60之间
-        CGFloat width = 44;
+        CGFloat width = 40;
         ball.layer.cornerRadius = width/2;
         ball.layer.masksToBounds = YES;
         
